@@ -12,7 +12,9 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "pandas>=3.0.5",
+    "psycopg[binary,pool]>=3.3.4",
     "pyarrow>=25.0.0",
+    "sqlalchemy>=2.0.51",
 ]
 
 [project.scripts]
@@ -24,5 +26,6 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "jupyter>=1.1.1",
     "pgcli>=4.5.0",
 ]
